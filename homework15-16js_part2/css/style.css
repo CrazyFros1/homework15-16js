@@ -1,0 +1,69 @@
+.search {
+	width: 80vw;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.search__logo{
+	margin-bottom: 0;
+	color: #00a551;
+	font-weight: normal;
+}
+
+.search__logo_2 {
+	color: #0d5a8f;
+	font-weight: bold;
+}
+
+.search__source {
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.search__source_part {
+	font-weight: normal;
+}
+
+.search__input {
+	display: block;
+	width: 50vw;
+	height: 2.5vh;
+	margin: 0 auto;
+	border-radius: 5px;
+	background-color: #eee;
+}
+
+.search__submit {
+	width: 15vw;
+	height: 4vh;
+	margin: 2vh auto;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #0d5a8f;
+}
+
+.search__results {
+	text-align: left;
+}
+
+.search__result {
+	text-align: left;
+	margin: 2vh auto;
+	border-bottom: 1px solid #5a5a5a;
+}
+
+.search__title{
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.search__text {
+	height: 70px;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+.search__time {
+	font-size: 8px;
+}

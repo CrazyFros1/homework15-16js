@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Search</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+
+</head>
+<body>
+<div class="search">
+	
+	<h1 class="search__logo">My <span class="search__logo_2">Search</span>
+	<input type="text" class="search__input">
+	<button class="search__submit">Search</button>
+	
+	<div id="search__results"></div>
+
+</div>
+
+<script type="text/html" id="search-template">
+			<% for (var i = 0; i < data.posts.length; i++) { %>
+				<div class="search__result">
+					<% if (data.posts[i].title.length === 0) { %>
+					<a href="<%=data.posts[i].url%>" class="search__title">Title is unknown</a>
+					<% } %>
+					<a href="<%=data.posts[i].url%>" class="search__title"><%=data.posts[i].title%></a>
+					<p class="search__text"><%=data.posts[i].text%></p>
+					<p class="search__time"><%=data.posts[i].published%></p>
+				</div>
+			<% } %>
+</script>
+<script src="js/javascript.js"></script>
+</body>
+</html>
